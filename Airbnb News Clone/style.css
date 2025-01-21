@@ -1,0 +1,174 @@
+/* Reset Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-bottom: 20px; /* Adds space between navbar and main article */
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand, .nav-link {
+    font-weight: bold;
+    color: #333 !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Main Article Section */
+.main-article-text {
+    margin-top: 20px;
+}
+
+.main-article-text p {
+    font-size: 14px;
+    color: #666;
+}
+
+.main-article-text h2 {
+    font-size: 28px;
+    line-height: 1.4;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.main-article-text .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Main Article Image */
+.main-article-text + .col-md-7 img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Control height to avoid overflow */
+    object-fit: cover;
+    border-radius: 80px;
+}
+
+/* Responsive Layout for Main Article Section */
+@media (max-width: 768px) {
+    .main-article-text + .col-md-7 img {
+        max-height: 350px; /* Smaller height for mobile */
+    }
+}
+
+/* Latest News Section */
+.row.text-center .col-md-3 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.row.text-center h5 {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+/* Social Icons */
+.social-icons img {
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Airbnb Icons Section */
+#Airbnb-Icons .col-lg-6 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#Airbnb-Icons article h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#Airbnb-Icons article p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Footer Styles */
+footer .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #007bff;
+}
+
+footer .bg p {
+    font-size: 14px;
+    color: #777;
+}
+
+footer .bg img {
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+footer .bg img:hover {
+    transform: scale(1.1);
+}
+
+/* General Container Adjustments */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h3, h4, h5 {
+    margin-bottom: 15px;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+    .main-article-text h2 {
+        font-size: 24px;
+    }
+
+    .main-article-text .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #Airbnb-Icons .col-lg-6 {
+        margin-bottom: 20px;
+    }
+}
